@@ -4,7 +4,7 @@
 
 .product-area{
     border: 2px solid black;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 50px;
@@ -56,10 +56,60 @@
     font-size: 45px;
 }
 
-#buy-btn{
+#buy-btn, #send-btn{
     background: blue;
     color: white;
     padding: 10px 25px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.accesories-area {
+
+    gap:20px;
+}
+
+.grid-cards{
+    display: flex;
+}
+
+.cards {
+    border: 1px solid lightcyan;
+    height: 300px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+#img-cards {
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.raffle-area{
+    display: flex;
+    background-color: lightblue;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#raffle-text{
+    padding: 20px;
+}
+
+#raffle-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+}
+
+#raffle-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
