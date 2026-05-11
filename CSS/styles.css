@@ -1,6 +1,59 @@
-.footer{
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background: #ffffff;
+    color: #111;
+}
+
+
+/* navegador */ 
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo{
+    justify-content: left;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-btn{
+    padding: 12px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.contact-btn:hover{
+    background: #9299ff;
+    color: #fff;
+}
+
+/* producto */ 
 
 .product-area{
     border: 2px solid black;
@@ -10,7 +63,7 @@
     margin-top: 50px;
 }
 
-#green-tag{
+.green-tag{
     position: absolute;
     background-color: green;
     color: white;
@@ -94,6 +147,10 @@
     margin: 20px 0;
 }
 
+.product-price{
+    align-items: center;
+}
+
 #price{
     font-size: 45px;
 }
@@ -104,6 +161,7 @@
     padding: 10px 25px;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #buy-btn:hover, #send-btn:hover{
@@ -111,18 +169,40 @@
     color: black;
 }
 
-.accesories-area {
+#gift-btn{
+    background: lightblue;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+#gift-btn:hover{
+    background: blue;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons{
+    margin-right: 20px;
+}
+
+.accesories-area {
     gap:20px;
 }
 
 .grid-cards{
     display: flex;
+    justify-content: center;
 }
 
 .cards {
+    display: flex;
+    flex-direction: column;
     border: 1px solid lightcyan;
-    height: 300px;
+    height: 350px;
     width: 200px;
     padding: 15px;
     border-radius: 12px;
@@ -130,9 +210,22 @@
 }
 
 #img-cards {
-    height: 150px;
+    height: 160px;
     margin-bottom: 15px;
     border-radius: 8px;
+}
+
+.acc-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;           
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+}
+
+.read-more{
+    margin-top: auto; 
 }
 
 .raffle-area{
@@ -159,4 +252,8 @@
     padding: 10px;
     border: 1px solid grey;
     border-radius: 5px;
+}
+
+.footer{
+    background-color: black;
 }

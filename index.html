@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <img src="" alt="agoodshop" class="shoplogo">
-        <nav id="menu">
-            <a href="#">Tienda</a>
-            <a href="#">Accesorios</a>
-            <a href="#">Soporte</a>
-            <button id="contact-btn">Contactar</button>
-        </nav>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="" alt="agoodshop" class="shop-logo">
+            </div>
+            <div>
+                <nav class="menu">
+                    <a href="#">Tienda</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Soporte</a>
+                    <a href="#" class="contact-btn">Contactar</a>
+                </nav>
+            </div>
+        </div>
+
     </header>
+    <div class="container">
+
+    </div>
     <main class="container-shop">
             <section class="product-area">
                 <div class="product-img">
-                    <span id="green-tag">128gb</span>
+                    <span class="green-tag">128gb</span>
                     <div class="carousel">
                         <div class="carousel-item" id="img1"><img src="SOURCES/movil.png" alt="product image" id="img-product"></div>
                         <div class="carousel-item" id="img2"><img src="SOURCES\movil de lado.png" alt="product image" id="img-product"></div>
@@ -35,11 +46,12 @@
                     <div id="product-price">
                         <span id="price">999.99€</span>
                         <button id="buy-btn">Comprar</button>
+                        <button id="gift-btn"><i class="fa-solid fa-gift"></i> Comprar como regalo</button>
                     </div>
                     <div id="product-shipping">
-                        <span><img src="" alt="Caja">Envío rápido</span>
-                        <span><img src="" alt="Devolución">Devoluciones fáciles</span>
-                        <span><img src="" alt="Tarjeta">Pago a plazos</span>
+                        <span class="icons"><i class="fa-solid fa-truck-fast"></i> Envío rápido</span>
+                        <span class="icons"><i class="fa-solid fa-arrow-rotate-left"></i> Devoluciones fáciles</span>
+                        <span class="icons"><i class="fa-solid fa-credit-card"></i> Pago a plazos</span>
                     </div>
                 </div>
             </section>
@@ -49,22 +61,34 @@
                     <div class="cards">
                         <img src="SOURCES/auriculares blancos.png" alt="Imagen accesorio" id="img-cards">
                         <h3>Auriculares</h3>
-                        <p>...</p>
+                        <div class="acc-text">
+                            <p>Exclusivos auriculares con cancelación de ruido perfecta para escuchar música hasta en los lugares más bulliciosos .................................................................</p>
+                        </div>
+                        <a href="" class="read-more">Leer más</a>
                     </div>
                     <div class="cards">
                         <img src="SOURCES/funda premium.png" alt="Imagen accesorio" id="img-cards">
                         <h3>Funda Premium</h3>
-                        <p>Texto</p>
+                        <div class="acc-text">
+                            <p>Texto</p>
+                        </div>
+                        <a href="" class="read-more">Leer más</a>
                     </div>
                         <div class="cards">
                         <img src="SOURCES/funda azul.png" alt="Imagen accesorio" id="img-cards">
                         <h3>Funda</h3>
-                        <p>Texto</p>
+                        <div class="acc-text">
+                            <p>Texto</p>
+                        </div>
+                        <a href="" class="read-more">Leer más</a>
                     </div>
                     <div class="cards">
                         <img src="SOURCES/soporte coche.png" alt="Imagen accesorio" id="img-cards">
                         <h3>Soporte para el coche</h3>
-                        <p>Texto</p>
+                        <div class="acc-text">
+                            <p>Texto</p>
+                        </div>
+                        <a href="" class="read-more">Leer más</a>
                     </div>
                 </div>
             </section>
