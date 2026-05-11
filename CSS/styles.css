@@ -31,6 +31,7 @@ body{
 
 .menu{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 35px;
 }
@@ -304,7 +305,11 @@ body{
     display: flex;
     flex-direction: column;
     width: 400px;
-    padding: 20px;
+}
+
+.raffle-form label{
+    font-size: 12px;
+    padding-bottom: 5px;
 }
 
 .raffle-form input {
@@ -317,15 +322,17 @@ body{
 .send-btn{
     background: #808080;
     color: #add8e6;
-    padding: 10px 25px;
-    border-radius: 5px;
+    width: 30%;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .send-btn:hover{
-    background-color: #3b82f6;
-    color: black;
+    background-color: #00000093;
+    color: #add8e6;
 }
 
 
@@ -340,4 +347,26 @@ body{
     align-items: center;
     padding: 10px 10px;
     border-top: 1px solid #808080;
+}
+
+.footer-logo{
+    justify-content: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+
+.footer-socials{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 35px;
+    margin-right: 50px;
+}
+
+.footer-socials a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
 }
