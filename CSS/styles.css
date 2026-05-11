@@ -332,5 +332,12 @@ body{
 /* Footer */
 
 .footer{
-    background-color: black;
+    background-color: #c8c8c83b;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+    border-top: 1px solid #808080;
 }
