@@ -11,7 +11,7 @@ body{
 }
 
 
-/* Navegador */ 
+/* Nav */ 
 
 .navbar {
     max-width: 1200px;
@@ -27,6 +27,10 @@ body{
     justify-content: left;
     font-size: 28px;
     font-weight: 700;
+}
+
+.shop-logo{
+    height: 50px;
 }
 
 .menu{
@@ -56,7 +60,7 @@ body{
 }
 
 
-/* Producto */ 
+/* Product */ 
 
 .container{
     max-width: 1200px;
@@ -184,7 +188,7 @@ body{
 }
 
 
-/* Accesorios */
+/* Accesories */
 
 .accesories{
     padding: 40px;
@@ -193,7 +197,7 @@ body{
 .features{
     display: flex;
     gap: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .feature{
@@ -209,7 +213,7 @@ body{
 
 .section-title{
     font-size: 48px;
-    margin: 80px 0 35px;
+    margin-bottom: 35px;
     font-weight: 700;
 }
 
@@ -283,7 +287,7 @@ body{
 }
 
 
-/* Formulario */
+/* Raffle */
 
 .raffle{
     max-width: 1200px;
@@ -356,6 +360,12 @@ body{
     margin-left: 50px;
 }
 
+.footer-logo p{
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 .footer-socials{
     display: flex;
     justify-content: flex-end;
@@ -369,4 +379,83 @@ body{
     color: #444;
     font-size: 14px;
     font-weight: 500;
+}
+
+
+/* --- RESPONSIVE --- */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+}
+
+/* Móiles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap; 
+    }
+
+    .product {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+
+    .product-content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .product-price {
+        justify-content: center; 
+    }
+
+    .features {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .feature {
+        max-width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .raffle {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .raffle-form {
+        width: 100%; 
+    }
+
+    .send-btn {
+        width: 100%; 
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .footer-socials {
+        justify-content: center;
+        margin-right: 0;
+    }
 }
