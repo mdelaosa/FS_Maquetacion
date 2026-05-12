@@ -389,6 +389,10 @@ body{
     font-weight: 500;
 }
 
+.footer-socials a:hover{
+    color: #000c66;
+}
+
 
 /* --- RESPONSIVE --- */
 
